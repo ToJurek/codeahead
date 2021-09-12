@@ -1,0 +1,8 @@
+{
+  "base": "CHF",
+  "last_updated": 1631366100,
+  "exchange_rates": {
+    "EUR": 12.34,
+    "JPY": 300.0
+  }
+}
