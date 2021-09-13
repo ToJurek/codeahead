@@ -42,3 +42,7 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
+## Exchange Rates API
+
+See the [API docs](https://app.abstractapi.com/api/exchange-rates) for more information.
+API Key in .env file could be deprecated. Please sign in and copy key from website. Then run App again. 
