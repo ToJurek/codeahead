@@ -21,7 +21,7 @@ const App = () => {
   // })
 
   return (
-    <div className="App">
+    <div style={{textAlign: "center"}}>
       <ErrorModal
         isOpen={useTypedSelector((state) => state.currencyRates.isError)}
       />
