@@ -7,9 +7,7 @@ import {
 import { ICurrenciesResponse } from "../types/currenciesResponse";
 
 // @ts-ignore
-export const getCurrencyRates =
-  (base? = "USD") =>
-  async (dispatch) =>
+export const getCurrencyRates = (base = "USD") => async (dispatch) =>
     await axios
       .get<ICurrenciesResponse>(
         `https://exchange-rates.abstractapi.com/v1/live/`,

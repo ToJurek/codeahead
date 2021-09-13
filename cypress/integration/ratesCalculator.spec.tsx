@@ -47,9 +47,15 @@ describe("Simple Currency Rates Response", () => {
   });
 
   it("should wait for data", () => {
-    cy.get("select").eq(0).select("AUD");
+    cy.get("select").select("AUD");
     cy.get("div#loading-spinner").should("be.visible");
     cy.wait(3000);
     cy.get("div#loading-spinner").should("not.be.visible");
+  });
+
+  it("should handle error", () => {
+    cy.get("select").select("GBP");
+    cy.get("div.makeStyles-paper-2").should("be.visible");
+    cy.get("h2#server-modal-title").should("contain", "ERROR");
   });
 });
